@@ -7,6 +7,7 @@ import { AssetCard } from './components/AssetCard'
 import { Timeline, TimelineItem } from './components/Timeline'
 import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
+import { Steps, Step } from './components/Steps'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -22,6 +23,8 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     TimelineItem,
     Placeholder,
     Hero,
+    Steps,
+    Step,
     ...components,
   }
 }
