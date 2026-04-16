@@ -27,6 +27,7 @@ article {
   line-height: 1.6;
   color: rgb(55, 53, 47);
   letter-spacing: -0.003em;
+  max-width: 720px; /* Notion-style content width */
 }
 
 .dark article {
@@ -65,9 +66,9 @@ article h3 {
   line-height: 1.3;
 }
 
-/* 단락 간격 */
+/* 단락 간격 - Notion 기본 단락 간격 */
 article p {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.85em;
 }
 
 /* 구분선 - 노션 스타일 얇은 선 */
@@ -234,4 +235,56 @@ aside a {
 
 .theme-switch-navbar {
   margin-left: 0.25rem;
+}
+
+/* Notion-style image */
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.25em auto 1.25em;
+  border-radius: 3px;
+  border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.dark article img {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+/* Notion-style figure & figcaption */
+article figure {
+  margin: 0.5em 0 1.25em;
+  text-align: center;
+}
+
+article figure img {
+  margin: 0 auto 0.5em;
+}
+
+article figcaption {
+  font-size: 0.8125em;
+  color: rgba(55, 53, 47, 0.5);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.dark article figcaption {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Notion-style code block margin */
+article pre {
+  margin: 0.5em 0 1.25em;
+  border-radius: 4px;
+}
+
+/* 사이드바 활성 항목 */
+.nextra-sidebar li a[aria-current="page"] {
+  font-weight: 500;
+  background-color: rgba(55, 53, 47, 0.06);
+  border-radius: 4px;
+}
+
+.dark .nextra-sidebar li a[aria-current="page"] {
+  background-color: rgba(255, 255, 255, 0.06);
 }
